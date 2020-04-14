@@ -68,13 +68,15 @@ public class PaymentServiceImpl implements PaymentService {
 
 	@Override
 	public StateMachine<PaymentState, PaymentEvent> authorizePaymnent(long paymentId) {
-		// TODO Auto-generated method stub
+		StateMachine<PaymentState, PaymentEvent> sm = build(paymentId);
+		sendEvent(paymentId, sm, PaymentEvent.AUTH_APPROVED);
 		return null;
 	}
 
 	@Override
 	public StateMachine<PaymentState, PaymentEvent> declineAuth(long paymentId) {
-		// TODO Auto-generated method stub
+		StateMachine<PaymentState, PaymentEvent> sm = build(paymentId);
+		sendEvent(paymentId, sm, PaymentEvent.AUTH_DECLINED);
 		return null;
 	}
 
