@@ -18,11 +18,13 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class PaymentServiceImpl implements PaymentService {
 	
-	private static final String PAYMENT_ID_HEADER = "payment_id";
+	public static final String PAYMENT_ID_HEADER = "payment_id";
 	
 	private final PaymentRepository paymentRepository;
 	
 	private final StateMachineFactory<PaymentState, PaymentEvent> stateMachineFactory;
+	
+	private final PaymentStateChangeInterceptor paymentStateChangeInterceptor;
 	
 	private StateMachine<PaymentState, PaymentEvent> build(Long paymentId) {
 		
@@ -37,6 +39,7 @@ public class PaymentServiceImpl implements PaymentService {
 		 * Set the StateMachine with the state of the payment that we have in the db
 		 */
 		sm.getStateMachineAccessor().doWithAllRegions(sma -> {
+			sma.addStateMachineInterceptor(paymentStateChangeInterceptor);
 			sma.resetStateMachine(new DefaultStateMachineContext<PaymentState, PaymentEvent>(
 					payment.getState(), null, null, null));
 		});
