@@ -1,29 +1,37 @@
 package com.springframework.msscssm.config;
 
 import java.util.EnumSet;
-import java.util.Random;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.statemachine.action.Action;
 import org.springframework.statemachine.config.EnableStateMachineFactory;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;
 import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
+import org.springframework.statemachine.guard.Guard;
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.state.State;
 
 import com.springframework.msscssm.domain.PaymentEvent;
 import com.springframework.msscssm.domain.PaymentState;
-import com.springframework.msscssm.services.PaymentServiceImpl;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@RequiredArgsConstructor
 @EnableStateMachineFactory
 @Configuration
 public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentState, PaymentEvent> {
+	
+	private final Action<PaymentState, PaymentEvent> preAuthAction;
+    private final Action<PaymentState, PaymentEvent> authAction;
+    private final Action<PaymentState, PaymentEvent> preAuthApprovedAction;
+    private final Action<PaymentState, PaymentEvent> preAuthDeclinedAction;
+    private final Action<PaymentState, PaymentEvent> authApprovedAction;
+    private final Action<PaymentState, PaymentEvent> authDeclinedAction;
+    private final Guard<PaymentState, PaymentEvent> paymentIdGuard;
 	
 	@Override
 	public void configure(StateMachineStateConfigurer<PaymentState, PaymentEvent> states) throws Exception {
@@ -42,35 +50,40 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
 				.source(PaymentState.NEW)
 					.target(PaymentState.NEW)
 						.event(PaymentEvent.PRE_AUTHORIZE)
-							.action(preAuthAction())
-								.and()
+							.action(preAuthAction)
+								.guard(paymentIdGuard)
+									.and()
 			.withExternal()
 				.source(PaymentState.NEW)
 					.target(PaymentState.PRE_AUTH)
 						.event(PaymentEvent.PRE_AUTH_APPROVED)
-							.and()
+							.action(preAuthApprovedAction)
+								.and()
 			.withExternal()
 				.source(PaymentState.NEW)
 					.target(PaymentState.PRE_AUTH_ERROR)
 						.event(PaymentEvent.PRE_AUTH_DECLINED)
-							.and()
+						 	.action(preAuthDeclinedAction)
+						 		.and()
 			.withExternal()
 				.source(PaymentState.PRE_AUTH)
 					.target(PaymentState.PRE_AUTH)
 						.event(PaymentEvent.AUTHORIZE)
-							.action(authAction())
+							.action(authAction)
 								.and()				
 			.withExternal()
 				.source(PaymentState.PRE_AUTH)
 					.target(PaymentState.AUTH)
 						.event(PaymentEvent.AUTH_APPROVED)
-							.and()
+							.action(authApprovedAction)
+								.and()
 			.withExternal()
 				.source(PaymentState.PRE_AUTH)
 					.target(PaymentState.AUTH_ERROR)
-						.event(PaymentEvent.AUTH_DECLINED);						
+						.event(PaymentEvent.AUTH_DECLINED)
+						.action(authDeclinedAction);
 	}
-
+	
 	@Override
 	public void configure(StateMachineConfigurationConfigurer<PaymentState, PaymentEvent> config) throws Exception {
 		StateMachineListenerAdapter<PaymentState, PaymentEvent> adapter = new StateMachineListenerAdapter<>() {
@@ -80,6 +93,12 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
 			}
 		};
 		config.withConfiguration().listener(adapter);
+	}
+	
+	/*public Guard<PaymentState, PaymentEvent> paymentIdGuard() {
+		return context -> {
+			return context.getMessageHeader(PaymentServiceImpl.PAYMENT_ID_HEADER) != null;
+		};
 	}
 	
 	public Action<PaymentState, PaymentEvent> preAuthAction() {
@@ -129,6 +148,6 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
 										.build());
 			}
 		};
-	}
+	}*/
 	
 }
