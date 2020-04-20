@@ -30,21 +30,21 @@ import java.util.UUID;
 @Getter
 <span class="nc" id="L31">@Setter</span>
 <span class="nc" id="L32">@NoArgsConstructor</span>
-<span class="nc" id="L33">@AllArgsConstructor</span>
+<span class="fc" id="L33">@AllArgsConstructor</span>
 public class BaseItem {
-<span class="nc" id="L35">    @JsonProperty(&quot;id&quot;)</span>
-<span class="nc" id="L36">    private UUID id = null;</span>
+<span class="pc" id="L35">    @JsonProperty(&quot;id&quot;)</span>
+<span class="fc" id="L36">    private UUID id = null;</span>
 
-<span class="nc" id="L38">    @JsonProperty(&quot;version&quot;)</span>
-<span class="nc" id="L39">    private Integer version = null;</span>
+<span class="pc" id="L38">    @JsonProperty(&quot;version&quot;)</span>
+<span class="fc" id="L39">    private Integer version = null;</span>
 
-<span class="nc" id="L41">    @JsonFormat(pattern=&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;, shape=JsonFormat.Shape.STRING)</span>
+<span class="pc" id="L41">    @JsonFormat(pattern=&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;, shape=JsonFormat.Shape.STRING)</span>
     @JsonProperty(&quot;createdDate&quot;)
-<span class="nc" id="L43">    private OffsetDateTime createdDate = null;</span>
+<span class="fc" id="L43">    private OffsetDateTime createdDate = null;</span>
 
-<span class="nc" id="L45">    @JsonFormat(pattern=&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;, shape=JsonFormat.Shape.STRING)</span>
+<span class="pc" id="L45">    @JsonFormat(pattern=&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;, shape=JsonFormat.Shape.STRING)</span>
     @JsonProperty(&quot;lastModifiedDate&quot;)
-<span class="nc" id="L47">    private OffsetDateTime lastModifiedDate = null;</span>
+<span class="fc" id="L47">    private OffsetDateTime lastModifiedDate = null;</span>
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

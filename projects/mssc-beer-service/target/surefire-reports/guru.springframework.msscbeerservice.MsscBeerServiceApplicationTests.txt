@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.554 s - in guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.925 s - in guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests

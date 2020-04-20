@@ -30,7 +30,7 @@ import java.util.Optional;
 
     @Override
     public BeerOrderLineDto beerOrderLineToDto(BeerOrderLine line) {
-<span class="nc" id="L33">        BeerOrderLineDto orderLineDto = beerOrderLineMapper.beerOrderLineToDto(line);</span>
+<span class="fc" id="L33">        BeerOrderLineDto orderLineDto = beerOrderLineMapper.beerOrderLineToDto(line);</span>
 <span class="nc" id="L34">        Optional&lt;BeerDto&gt; beerDtoOptional = beerService.getBeerByUpc(line.getUpc());</span>
 
 <span class="nc" id="L36">        beerDtoOptional.ifPresent(beerDto -&gt; {</span>

@@ -31,21 +31,21 @@ import java.util.UUID;
 <span class="nc bnc" id="L31" title="All 48 branches missed.">@EqualsAndHashCode(callSuper = true)</span>
 public class BeerOrderDto extends BaseItem {
 
-<span class="nc" id="L34">    @Builder</span>
+<span class="pc" id="L34">    @Builder</span>
     public BeerOrderDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate, UUID customerId, List&lt;BeerOrderLineDto&gt; beerOrderLines,
                         OrderStatusEnum orderStatus, String orderStatusCallbackUrl, String customerRef) {
-<span class="nc" id="L37">        super(id, version, createdDate, lastModifiedDate);</span>
-<span class="nc" id="L38">        this.customerId = customerId;</span>
-<span class="nc" id="L39">        this.beerOrderLines = beerOrderLines;</span>
-<span class="nc" id="L40">        this.orderStatus = orderStatus;</span>
-<span class="nc" id="L41">        this.orderStatusCallbackUrl = orderStatusCallbackUrl;</span>
-<span class="nc" id="L42">        this.customerRef = customerRef;</span>
-<span class="nc" id="L43">    }</span>
+<span class="fc" id="L37">        super(id, version, createdDate, lastModifiedDate);</span>
+<span class="fc" id="L38">        this.customerId = customerId;</span>
+<span class="fc" id="L39">        this.beerOrderLines = beerOrderLines;</span>
+<span class="fc" id="L40">        this.orderStatus = orderStatus;</span>
+<span class="fc" id="L41">        this.orderStatusCallbackUrl = orderStatusCallbackUrl;</span>
+<span class="fc" id="L42">        this.customerRef = customerRef;</span>
+<span class="fc" id="L43">    }</span>
 
 <span class="nc" id="L45">    private UUID customerId;</span>
-<span class="nc" id="L46">    private String customerRef;</span>
-<span class="nc" id="L47">    private List&lt;BeerOrderLineDto&gt; beerOrderLines;</span>
-<span class="nc" id="L48">    private OrderStatusEnum orderStatus;</span>
-<span class="nc" id="L49">    private String orderStatusCallbackUrl;</span>
+<span class="fc" id="L46">    private String customerRef;</span>
+<span class="fc" id="L47">    private List&lt;BeerOrderLineDto&gt; beerOrderLines;</span>
+<span class="fc" id="L48">    private OrderStatusEnum orderStatus;</span>
+<span class="fc" id="L49">    private String orderStatusCallbackUrl;</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

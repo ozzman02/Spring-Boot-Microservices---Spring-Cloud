@@ -32,7 +32,7 @@ import java.util.UUID;
  * Created by jt on 2019-01-26.
  */
 
-<span class="nc" id="L35">@Setter</span>
+<span class="pc" id="L35">@Setter</span>
 @Getter
 <span class="fc" id="L37">@NoArgsConstructor</span>
 @MappedSuperclass
@@ -60,10 +60,10 @@ public class BaseEntity {
 
     @CreationTimestamp
     @Column(updatable = false)
-<span class="nc" id="L63">    private Timestamp createdDate;</span>
+<span class="fc" id="L63">    private Timestamp createdDate;</span>
 
     @UpdateTimestamp
-<span class="nc" id="L66">    private Timestamp lastModifiedDate;</span>
+<span class="fc" id="L66">    private Timestamp lastModifiedDate;</span>
 
     public boolean isNew() {
 <span class="nc bnc" id="L69" title="All 2 branches missed.">        return this.id == null;</span>

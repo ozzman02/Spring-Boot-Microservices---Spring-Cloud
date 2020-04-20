@@ -31,23 +31,23 @@ import java.util.UUID;
 <span class="nc bnc" id="L31" title="All 56 branches missed.">@EqualsAndHashCode(callSuper = true)</span>
 public class BeerOrderLineDto extends BaseItem {
 
-<span class="nc" id="L34">    @Builder</span>
+<span class="pc" id="L34">    @Builder</span>
     public BeerOrderLineDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate,
                             String upc, String beerName,String beerStyle, UUID beerId, Integer orderQuantity, BigDecimal price) {
-<span class="nc" id="L37">        super(id, version, createdDate, lastModifiedDate);</span>
-<span class="nc" id="L38">        this.upc = upc;</span>
-<span class="nc" id="L39">        this.beerName = beerName;</span>
-<span class="nc" id="L40">        this.beerStyle = beerStyle;</span>
-<span class="nc" id="L41">        this.beerId = beerId;</span>
-<span class="nc" id="L42">        this.orderQuantity = orderQuantity;</span>
-<span class="nc" id="L43">        this.price = price;</span>
-<span class="nc" id="L44">    }</span>
+<span class="fc" id="L37">        super(id, version, createdDate, lastModifiedDate);</span>
+<span class="fc" id="L38">        this.upc = upc;</span>
+<span class="fc" id="L39">        this.beerName = beerName;</span>
+<span class="fc" id="L40">        this.beerStyle = beerStyle;</span>
+<span class="fc" id="L41">        this.beerId = beerId;</span>
+<span class="fc" id="L42">        this.orderQuantity = orderQuantity;</span>
+<span class="fc" id="L43">        this.price = price;</span>
+<span class="fc" id="L44">    }</span>
 
-<span class="nc" id="L46">    private String upc;</span>
+<span class="fc" id="L46">    private String upc;</span>
 <span class="nc" id="L47">    private String beerName;</span>
 <span class="nc" id="L48">    private String beerStyle;</span>
-<span class="nc" id="L49">    private UUID beerId;</span>
-<span class="nc" id="L50">    private Integer orderQuantity = 0;</span>
+<span class="fc" id="L49">    private UUID beerId;</span>
+<span class="pc" id="L50">    private Integer orderQuantity = 0;</span>
 <span class="nc" id="L51">    private BigDecimal price;</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

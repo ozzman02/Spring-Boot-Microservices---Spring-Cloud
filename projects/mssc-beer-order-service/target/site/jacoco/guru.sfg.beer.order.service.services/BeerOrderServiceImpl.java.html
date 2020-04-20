@@ -78,19 +78,19 @@ public class BeerOrderServiceImpl implements BeerOrderService {
     @Transactional
     @Override
     public BeerOrderDto placeOrder(UUID customerId, BeerOrderDto beerOrderDto) {
-<span class="nc" id="L81">        Optional&lt;Customer&gt; customerOptional = customerRepository.findById(customerId);</span>
+<span class="fc" id="L81">        Optional&lt;Customer&gt; customerOptional = customerRepository.findById(customerId);</span>
 
-<span class="nc bnc" id="L83" title="All 2 branches missed.">        if (customerOptional.isPresent()) {</span>
-<span class="nc" id="L84">            BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);</span>
-<span class="nc" id="L85">            beerOrder.setId(null); //should not be set by outside client</span>
-<span class="nc" id="L86">            beerOrder.setCustomer(customerOptional.get());</span>
-<span class="nc" id="L87">            beerOrder.setOrderStatus(OrderStatusEnum.NEW);</span>
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        if (customerOptional.isPresent()) {</span>
+<span class="fc" id="L84">            BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);</span>
+<span class="fc" id="L85">            beerOrder.setId(null); //should not be set by outside client</span>
+<span class="fc" id="L86">            beerOrder.setCustomer(customerOptional.get());</span>
+<span class="fc" id="L87">            beerOrder.setOrderStatus(OrderStatusEnum.NEW);</span>
 
-<span class="nc" id="L89">            beerOrder.getBeerOrderLines().forEach(line -&gt; line.setBeerOrder(beerOrder));</span>
+<span class="fc" id="L89">            beerOrder.getBeerOrderLines().forEach(line -&gt; line.setBeerOrder(beerOrder));</span>
 
-<span class="nc" id="L91">            BeerOrder savedBeerOrder = beerOrderRepository.saveAndFlush(beerOrder);</span>
+<span class="fc" id="L91">            BeerOrder savedBeerOrder = beerOrderRepository.saveAndFlush(beerOrder);</span>
 
-<span class="nc" id="L93">            log.debug(&quot;Saved Beer Order: &quot; + beerOrder.getId());</span>
+<span class="fc" id="L93">            log.debug(&quot;Saved Beer Order: &quot; + beerOrder.getId());</span>
 
             //todo impl
           //  publisher.publishEvent(new NewBeerOrderEvent(savedBeerOrder));

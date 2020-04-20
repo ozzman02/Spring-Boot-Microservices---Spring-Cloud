@@ -45,33 +45,33 @@ public class TastingRoomService {
 <span class="pc bpc" id="L45" title="1 of 2 branches missed.">        if (customerList.size() == 1){ //should be just one</span>
 <span class="nc" id="L46">            doPlaceOrder(customerList.get(0));</span>
         } else {
-<span class="fc" id="L48">            log.error(&quot;Too many or too few tasting room customers found&quot;);</span>
+<span class="nc" id="L48">            log.error(&quot;Too many or too few tasting room customers found&quot;);</span>
         }
-<span class="fc" id="L50">    }</span>
+<span class="nc" id="L50">    }</span>
 
     private void doPlaceOrder(Customer customer) {
-<span class="nc" id="L53">        String beerToOrder = getRandomBeerUpc();</span>
+<span class="fc" id="L53">        String beerToOrder = getRandomBeerUpc();</span>
 
-<span class="nc" id="L55">        BeerOrderLineDto beerOrderLine = BeerOrderLineDto.builder()</span>
-<span class="nc" id="L56">                .upc(beerToOrder)</span>
-<span class="nc" id="L57">                .orderQuantity(new Random().nextInt(6)) //todo externalize value to property</span>
-<span class="nc" id="L58">                .build();</span>
+<span class="fc" id="L55">        BeerOrderLineDto beerOrderLine = BeerOrderLineDto.builder()</span>
+<span class="fc" id="L56">                .upc(beerToOrder)</span>
+<span class="fc" id="L57">                .orderQuantity(new Random().nextInt(6)) //todo externalize value to property</span>
+<span class="fc" id="L58">                .build();</span>
 
-<span class="nc" id="L60">        List&lt;BeerOrderLineDto&gt; beerOrderLineSet = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L61">        beerOrderLineSet.add(beerOrderLine);</span>
+<span class="fc" id="L60">        List&lt;BeerOrderLineDto&gt; beerOrderLineSet = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L61">        beerOrderLineSet.add(beerOrderLine);</span>
 
-<span class="nc" id="L63">        BeerOrderDto beerOrder = BeerOrderDto.builder()</span>
-<span class="nc" id="L64">                .customerId(customer.getId())</span>
-<span class="nc" id="L65">                .customerRef(UUID.randomUUID().toString())</span>
-<span class="nc" id="L66">                .beerOrderLines(beerOrderLineSet)</span>
-<span class="nc" id="L67">                .build();</span>
+<span class="fc" id="L63">        BeerOrderDto beerOrder = BeerOrderDto.builder()</span>
+<span class="fc" id="L64">                .customerId(customer.getId())</span>
+<span class="fc" id="L65">                .customerRef(UUID.randomUUID().toString())</span>
+<span class="fc" id="L66">                .beerOrderLines(beerOrderLineSet)</span>
+<span class="fc" id="L67">                .build();</span>
 
 <span class="nc" id="L69">        BeerOrderDto savedOrder = beerOrderService.placeOrder(customer.getId(), beerOrder);</span>
 
 <span class="nc" id="L71">    }</span>
 
     private String getRandomBeerUpc() {
-<span class="nc" id="L74">        return beerUpcs.get(new Random().nextInt(beerUpcs.size() -0));</span>
+<span class="fc" id="L74">        return beerUpcs.get(new Random().nextInt(beerUpcs.size() -0));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

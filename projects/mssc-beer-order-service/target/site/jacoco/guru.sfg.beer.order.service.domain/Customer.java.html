@@ -38,14 +38,14 @@ import java.util.UUID;
 @Entity
 public class Customer extends BaseEntity {
 
-<span class="pc" id="L41">    @Builder</span>
+<span class="nc" id="L41">    @Builder</span>
     public Customer(UUID id, Long version, Timestamp createdDate, Timestamp lastModifiedDate, String customerName,
                     UUID apiKey, Set&lt;BeerOrder&gt; beerOrders) {
-<span class="fc" id="L44">        super(id, version, createdDate, lastModifiedDate);</span>
-<span class="fc" id="L45">        this.customerName = customerName;</span>
-<span class="fc" id="L46">        this.apiKey = apiKey;</span>
-<span class="fc" id="L47">        this.beerOrders = beerOrders;</span>
-<span class="fc" id="L48">    }</span>
+<span class="nc" id="L44">        super(id, version, createdDate, lastModifiedDate);</span>
+<span class="nc" id="L45">        this.customerName = customerName;</span>
+<span class="nc" id="L46">        this.apiKey = apiKey;</span>
+<span class="nc" id="L47">        this.beerOrders = beerOrders;</span>
+<span class="nc" id="L48">    }</span>
 
 <span class="nc" id="L50">    private String customerName;</span>
 

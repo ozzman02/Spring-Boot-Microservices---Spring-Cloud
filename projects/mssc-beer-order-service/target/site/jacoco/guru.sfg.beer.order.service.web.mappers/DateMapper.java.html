@@ -30,20 +30,20 @@ import java.time.ZoneOffset;
 <span class="fc" id="L30">public class DateMapper {</span>
 
     public OffsetDateTime asOffsetDateTime(Timestamp ts){
-<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (ts != null){</span>
-<span class="nc" id="L34">            return OffsetDateTime.of(ts.toLocalDateTime().getYear(), ts.toLocalDateTime().getMonthValue(),</span>
-<span class="nc" id="L35">                    ts.toLocalDateTime().getDayOfMonth(), ts.toLocalDateTime().getHour(), ts.toLocalDateTime().getMinute(),</span>
-<span class="nc" id="L36">                    ts.toLocalDateTime().getSecond(), ts.toLocalDateTime().getNano(), ZoneOffset.UTC);</span>
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if (ts != null){</span>
+<span class="fc" id="L34">            return OffsetDateTime.of(ts.toLocalDateTime().getYear(), ts.toLocalDateTime().getMonthValue(),</span>
+<span class="fc" id="L35">                    ts.toLocalDateTime().getDayOfMonth(), ts.toLocalDateTime().getHour(), ts.toLocalDateTime().getMinute(),</span>
+<span class="fc" id="L36">                    ts.toLocalDateTime().getSecond(), ts.toLocalDateTime().getNano(), ZoneOffset.UTC);</span>
         } else {
 <span class="nc" id="L38">            return null;</span>
         }
     }
 
     public Timestamp asTimestamp(OffsetDateTime offsetDateTime){
-<span class="nc bnc" id="L43" title="All 2 branches missed.">        if(offsetDateTime != null) {</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if(offsetDateTime != null) {</span>
 <span class="nc" id="L44">            return Timestamp.valueOf(offsetDateTime.atZoneSameInstant(ZoneOffset.UTC).toLocalDateTime());</span>
         } else {
-<span class="nc" id="L46">            return null;</span>
+<span class="fc" id="L46">            return null;</span>
         }
     }
 
