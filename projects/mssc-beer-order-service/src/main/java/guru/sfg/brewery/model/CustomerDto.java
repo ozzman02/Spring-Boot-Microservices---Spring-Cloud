@@ -15,24 +15,26 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package guru.sfg.beer.order.service.web.model;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+package guru.sfg.brewery.model;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
-@Getter
-@Setter
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseItem {
-    @JsonProperty("id")
+@Builder
+public class CustomerDto {
+
+	@JsonProperty("id")
     private UUID id = null;
 
     @JsonProperty("version")
@@ -45,5 +47,6 @@ public class BaseItem {
     @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
     @JsonProperty("lastModifiedDate")
     private OffsetDateTime lastModifiedDate = null;
-}
 
+    private String customerName;
+}
