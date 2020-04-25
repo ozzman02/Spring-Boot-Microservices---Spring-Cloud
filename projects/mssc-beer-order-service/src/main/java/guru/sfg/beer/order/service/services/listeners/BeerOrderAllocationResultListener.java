@@ -1,4 +1,4 @@
-package guru.sfg.beer.order.service.services.listener;
+package guru.sfg.beer.order.service.services.listeners;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
