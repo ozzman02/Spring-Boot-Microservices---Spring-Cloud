@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+import guru.sfg.brewery.model.BeerDto;
+
 /**
  * Created by jt on 2019-07-21.
  */
