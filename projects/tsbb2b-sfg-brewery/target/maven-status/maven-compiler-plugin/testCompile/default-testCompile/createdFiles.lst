@@ -1,0 +1,7 @@
+guru\springframework\brewery\TsbbSfgBreweryApplicationTests.class
+guru\springframework\brewery\web\controllers\BeerOrderControllerIT.class
+guru\springframework\brewery\events\BeerOrderStatusChangeEventListenerTest.class
+guru\springframework\brewery\web\controllers\BeerControllerIT.class
+guru\springframework\brewery\web\controllers\BeerControllerTest.class
+guru\springframework\brewery\web\controllers\BeerControllerTest$TestListOperations.class
+guru\springframework\brewery\web\controllers\BeerOrderControllerTest.class
