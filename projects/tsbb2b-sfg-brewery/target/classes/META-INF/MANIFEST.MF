@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: USUARIO
+Build-Jdk: 12.0.2
+Implementation-Title: tsbb-sfg-brewery
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: guru.springframework.brewery
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/tsbb-sfg-brewery
+Created-By: Maven Integration for Eclipse
+
