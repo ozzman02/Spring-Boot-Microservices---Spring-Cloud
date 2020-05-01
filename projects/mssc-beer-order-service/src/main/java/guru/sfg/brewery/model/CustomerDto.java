@@ -17,16 +17,15 @@
 
 package guru.sfg.brewery.model;
 
-import java.time.OffsetDateTime;
-import java.util.UUID;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.OffsetDateTime;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -34,7 +33,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CustomerDto {
 
-	@JsonProperty("id")
+    @JsonProperty("id")
     private UUID id = null;
 
     @JsonProperty("version")
@@ -49,4 +48,5 @@ public class CustomerDto {
     private OffsetDateTime lastModifiedDate = null;
 
     private String customerName;
+
 }
