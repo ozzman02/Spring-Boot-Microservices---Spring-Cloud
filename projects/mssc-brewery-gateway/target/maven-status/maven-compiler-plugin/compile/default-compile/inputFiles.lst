@@ -1,0 +1,4 @@
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-gateway/src/main/java/com/sfg/gateway/config/GoogleConfig.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-gateway/src/main/java/com/sfg/gateway/config/LoadBalancedRoutesConfig.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-gateway/src/main/java/com/sfg/gateway/config/LocalHostRouteConfig.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-gateway/src/main/java/com/sfg/gateway/MsscBreweryGatewayApplication.java
