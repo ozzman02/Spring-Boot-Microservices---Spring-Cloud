@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: guru.springframework.msscbreweryclient.web.client.BreweryClientTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.813 s - in guru.springframework.msscbreweryclient.web.client.BreweryClientTest

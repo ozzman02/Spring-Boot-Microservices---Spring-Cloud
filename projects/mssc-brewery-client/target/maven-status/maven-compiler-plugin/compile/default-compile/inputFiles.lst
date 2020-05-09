@@ -1,0 +1,6 @@
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/web/model/CustomerDto.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/web/model/BeerDto.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/MsscBreweryClientApplication.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/web/client/BreweryClient.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/web/config/NIORestTemplateCustomizer.java
+/home/oscars/git/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-client/src/main/java/guru/springframework/msscbreweryclient/web/config/BlockingRestTemplateCustomizer.java
