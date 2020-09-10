@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class LoadBalancedRoutesConfig {
 
+    /*
+        Since we are using Eureka for discovery we do not know where the services are running
+        so we use the notation lb instead of using the port.
+    */
     @Bean
     public RouteLocator loadBalancedRoutes(RouteLocatorBuilder builder){
         return builder.routes()

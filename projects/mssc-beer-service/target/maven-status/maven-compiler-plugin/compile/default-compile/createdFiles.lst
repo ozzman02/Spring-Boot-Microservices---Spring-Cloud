@@ -1,9 +1,9 @@
-guru/springframework/msscbeerservice/services/BeerService.class
 guru/springframework/msscbeerservice/domain/Beer$BeerBuilder.class
+guru/springframework/msscbeerservice/services/BeerService.class
 guru/sfg/brewery/model/events/ValidateOrderResult$ValidateOrderResultBuilder.class
 guru/springframework/msscbeerservice/services/order/BeerOrderValidator.class
-guru/springframework/msscbeerservice/services/order/BeerOrderValidationListener.class
 guru/springframework/msscbeerservice/repositories/BeerRepository.class
+guru/springframework/msscbeerservice/services/order/BeerOrderValidationListener.class
 guru/sfg/brewery/model/events/ValidateOrderRequest.class
 guru/springframework/msscbeerservice/domain/Beer.class
 guru/sfg/brewery/model/events/BeerOrderDto$BeerOrderDtoBuilder.class
@@ -25,8 +25,8 @@ guru/sfg/brewery/model/BeerPagedList.class
 guru/springframework/msscbeerservice/services/inventory/InventoryFailoverFeignClient.class
 guru/sfg/brewery/model/BeerDto$BeerDtoBuilder.class
 guru/sfg/brewery/model/events/BeerOrderLineDto$BeerOrderLineDtoBuilder.class
-guru/springframework/msscbeerservice/services/brewing/BrewBeerListener.class
 guru/springframework/msscbeerservice/web/mappers/DateMapper.class
+guru/springframework/msscbeerservice/services/brewing/BrewBeerListener.class
 guru/springframework/msscbeerservice/services/BeerServiceImpl.class
 guru/springframework/msscbeerservice/services/inventory/model/BeerInventoryDto.class
 guru/springframework/msscbeerservice/services/inventory/InventoryServiceFeignClient.class

@@ -1,0 +1,6 @@
+guru/sfg/brewery/inventoryfailover/web/InventoryHandler.class
+guru/sfg/brewery/inventoryfailover/model/BeerInventoryDto$BeerInventoryDtoBuilder.class
+guru/sfg/brewery/inventoryfailover/model/BeerInventoryDto.class
+guru/sfg/brewery/inventoryfailover/web/RouterConfig.class
+guru/sfg/brewery/inventoryfailover/config/LocalDiscovery.class
+guru/sfg/brewery/inventoryfailover/SfgBreweryInventoryFailoverApplication.class
