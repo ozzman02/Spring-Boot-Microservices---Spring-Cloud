@@ -22,6 +22,7 @@
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerController.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/services/inventory/InventoryServiceFeignClientFailover.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/repositories/BeerRepository.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/config/FeignClientConfig.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/bootstrap/BeerLoader.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/springframework/msscbeerservice/services/inventory/model/BeerInventoryDto.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/main/java/guru/sfg/brewery/model/events/ValidateOrderResult.java
