@@ -1,3 +1,5 @@
-# MSSC Brewery POM
+[![CircleCI](https://circleci.com/gh/sfg-beer-works/sfg-brewery-bom.svg?style=svg)](https://circleci.com/gh/sfg-beer-works/sfg-brewery-bom)
 
-Source code in this repository is to support my online courses.
+# SFG Brewery BOM
+
+Common BOM for SFG Beer Works - Brewery Projects

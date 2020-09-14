@@ -1,2 +1,2 @@
-/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-eureka/src/main/java/guru/sfg/brewery/eureka/msscbreweryeureka/config/SecurityConfig.java
-/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-eureka/src/main/java/guru/sfg/brewery/eureka/msscbreweryeureka/MsscBreweryEurekaApplication.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-eureka/src/main/java/com/github/sfgbeerworks/sfgbreweryeureka/SfgBreweryEurekaApplication.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-brewery-eureka/src/main/java/com/github/sfgbeerworks/sfgbreweryeureka/config/WebSecurity.java

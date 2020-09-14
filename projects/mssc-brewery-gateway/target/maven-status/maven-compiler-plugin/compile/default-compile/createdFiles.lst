@@ -1,4 +1,1 @@
-com/sfg/gateway/config/LocalHostRouteConfig.class
-com/sfg/gateway/MsscBreweryGatewayApplication.class
-com/sfg/gateway/config/GoogleConfig.class
-com/sfg/gateway/config/LoadBalancedRoutesConfig.class
+com/github/sfgbeerworks/sfgbrewerygateway/SfgBreweryGatewayApplication.class

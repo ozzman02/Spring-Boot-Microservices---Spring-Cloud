@@ -1,2 +1,2 @@
-guru/sfg/brewery/eureka/msscbreweryeureka/MsscBreweryEurekaApplication.class
-guru/sfg/brewery/eureka/msscbreweryeureka/config/SecurityConfig.class
+com/github/sfgbeerworks/sfgbreweryeureka/SfgBreweryEurekaApplication.class
+com/github/sfgbeerworks/sfgbreweryeureka/config/WebSecurity.class

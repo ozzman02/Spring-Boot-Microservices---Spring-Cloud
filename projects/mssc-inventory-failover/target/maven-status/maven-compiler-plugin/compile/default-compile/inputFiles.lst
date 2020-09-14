@@ -1,5 +1,5 @@
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/web/InventoryHandler.java
-/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/web/RouterConfig.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/SfgBreweryInventoryFailoverApplication.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/config/RouterConfig.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/config/LocalDiscovery.java
 /Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-inventory-failover/src/main/java/guru/sfg/brewery/inventoryfailover/model/BeerInventoryDto.java

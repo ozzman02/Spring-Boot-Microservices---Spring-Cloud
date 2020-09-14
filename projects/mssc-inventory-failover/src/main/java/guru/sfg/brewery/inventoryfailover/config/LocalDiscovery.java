@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 /**
- * Created by jt on 3/14/20.
+ * Created by jt on 3/4/20.
  */
 @EnableDiscoveryClient
-@Profile("local-discovery")
+@Profile({"local-discovery", "digitialocean"})
 @Configuration
 public class LocalDiscovery {
 }

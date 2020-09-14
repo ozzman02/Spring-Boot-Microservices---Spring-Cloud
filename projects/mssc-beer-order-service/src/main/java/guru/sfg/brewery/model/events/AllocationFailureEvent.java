@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 /**
- * Created by jt on 2/26/20.
+ * Created by jt on 2/25/20.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class AllocationFailureEvent {
-    private UUID orderId;
+    private UUID beerOrderId;
 }
