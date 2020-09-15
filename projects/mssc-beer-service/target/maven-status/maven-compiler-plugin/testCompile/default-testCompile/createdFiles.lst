@@ -1,0 +1,10 @@
+guru/sfg/brewery/beer_service/web/controllers/BeerControllerTest.class
+guru/sfg/brewery/beer_service/services/BeerServiceImplTest.class
+guru/sfg/brewery/beer_service/web/controllers/BeerControllerTest$TestUpdateOperations.class
+guru/sfg/brewery/beer_service/web/controllers/BeerControllerTest$TestListOperations.class
+guru/sfg/brewery/beer_service/services/BeerServiceImplTest$BeerServiceConfig.class
+guru/sfg/brewery/beer_service/web/controllers/BeerControllerTest$TestSaveOperations.class
+guru/sfg/brewery/beer_service/web/controllers/BeerControllerIT.class
+guru/sfg/brewery/beer_service/services/inventory/BeerInventoryServiceRestTemplateImplTest.class
+guru/sfg/brewery/beer_service/services/BeerServiceImplTest$TestListOptions.class
+guru/sfg/brewery/beer_service/BeerServiceApplicationTest.class

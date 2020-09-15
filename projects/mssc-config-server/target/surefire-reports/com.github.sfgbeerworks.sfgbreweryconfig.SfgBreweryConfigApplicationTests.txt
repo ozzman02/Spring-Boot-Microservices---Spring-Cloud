@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.github.sfgbeerworks.sfgbreweryconfig.SfgBreweryConfigApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.664 s - in com.github.sfgbeerworks.sfgbreweryconfig.SfgBreweryConfigApplicationTests

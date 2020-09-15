@@ -1,0 +1,9 @@
+guru/sfg/brewery/order/service/web/controllers/BeerOrderControllerTest.class
+guru/sfg/brewery/order/service/services/BeerOrderManagerImplTest$RestTemplateBuilderProvider.class
+guru/sfg/brewery/order/service/services/BeerServiceImplTest.class
+guru/sfg/brewery/order/service/services/testcomponents/BeerOrderValidationListener.class
+guru/sfg/brewery/order/service/services/BaseServiceTest.class
+guru/sfg/brewery/order/service/services/BeerOrderManagerImplTest.class
+guru/sfg/brewery/order/service/services/BeerOrderServiceImplTest.class
+guru/sfg/brewery/order/service/services/testcomponents/BeerOrderAllocationListener.class
+guru/sfg/brewery/BreweryOrderServiceTest.class

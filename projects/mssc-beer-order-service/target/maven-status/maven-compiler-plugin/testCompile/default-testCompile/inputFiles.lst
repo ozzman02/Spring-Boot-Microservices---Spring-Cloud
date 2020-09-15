@@ -1,0 +1,8 @@
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/web/controllers/BeerOrderControllerTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/testcomponents/BeerOrderAllocationListener.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/BaseServiceTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/BeerOrderManagerImplTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/BreweryOrderServiceTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/BeerOrderServiceImplTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/testcomponents/BeerOrderValidationListener.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-order-service/src/test/java/guru/sfg/brewery/order/service/services/BeerServiceImplTest.java

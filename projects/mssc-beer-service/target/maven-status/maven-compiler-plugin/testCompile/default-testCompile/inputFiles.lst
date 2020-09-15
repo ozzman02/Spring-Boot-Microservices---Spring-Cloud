@@ -1,0 +1,5 @@
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/test/java/guru/sfg/brewery/beer_service/web/controllers/BeerControllerIT.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/test/java/guru/sfg/brewery/beer_service/BeerServiceApplicationTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/test/java/guru/sfg/brewery/beer_service/services/BeerServiceImplTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/test/java/guru/sfg/brewery/beer_service/services/inventory/BeerInventoryServiceRestTemplateImplTest.java
+/Users/oscarsantamaria/git/personal/Spring-Boot-Microservices-Spring-Cloud/projects/mssc-beer-service/src/test/java/guru/sfg/brewery/beer_service/web/controllers/BeerControllerTest.java
